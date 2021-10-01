@@ -1,10 +1,7 @@
 package com.fabricio.projectmongodb.services;
 
 import com.fabricio.projectmongodb.domain.Post;
-import com.fabricio.projectmongodb.domain.User;
-import com.fabricio.projectmongodb.dto.UserDTO;
 import com.fabricio.projectmongodb.repository.PostRepository;
-import com.fabricio.projectmongodb.repository.UserRepository;
 import com.fabricio.projectmongodb.services.exception.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,5 +20,8 @@ public class PostService {
         return obj.orElseThrow(() -> new ObjectNotFoundException("Object not found"));
     }
 
+    public List<Post> findByTitle(String text){
+        return repo.findByTitleContainingIgnoreCase(text);
+    }
 
 }
