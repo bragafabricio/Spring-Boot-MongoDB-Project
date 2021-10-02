@@ -24,6 +24,12 @@ public class PostResource {
     @Autowired
     private PostService service;
 
+    @GetMapping(value = "/{id}")
+    public ResponseEntity<Post> findById(@PathVariable String id) {
+        Post obj = service.findById(id);
+        return ResponseEntity.ok().body(obj);
+    }
+
    @GetMapping(value = "/titlesearch")
     public ResponseEntity<List<Post>> findByTitle(@RequestParam(value = "text", defaultValue = "") String text) {
        text = URL.decodeParam(text);
