@@ -7,7 +7,7 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/bragafabricio/Spring-Boot-MongoDB-Project?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/bragafabricio/Spring-Boot-MongoDB-Project?style=for-the-badge)
 
-This is a project for studying Spring Boot and MongoDB. It has endpoints for basic CRUD operations for users, and also has queries for searching for posts through parameters. .
+This is a project for studying Spring Boot and MongoDB. It has endpoints for basic CRUD operations for users, and also has queries for searching for posts through parameters.
 
 ## Project structure
 <img src="https://github.com/bragafabricio/Spring-Boot-MongoDB-Project/blob/master/img/structure.png" alt="project structe">
